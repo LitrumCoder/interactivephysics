@@ -2,7 +2,7 @@
   "name": "interactivephysics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://litrumcoder.github.io/interactivephysics",
+  "homepage": "https://litrumcoder.github.io/interactivephysics/",
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@testing-library/jest-dom": "^5.16.5",
