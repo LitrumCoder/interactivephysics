@@ -1,0 +1,286 @@
+.kinematics-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  color: #000;
+  overflow: visible;
+  padding-bottom: 40px;
+}
+
+.kinematics-header {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+.kinematics-header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #000;
+}
+
+.kinematics-header p {
+  margin: 10px 0 20px;
+  color: #666;
+}
+
+.simulation-content {
+  flex: 1;
+  display: flex;
+  min-height: 500px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.visualization-container {
+  height: 500px;
+  position: relative;
+  flex: 1;
+  background-color: #87CEEB;
+}
+
+.three-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.settings-container {
+  height: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  overflow-y: auto;
+  width: 300px;
+}
+
+.settings-panel {
+  background: transparent;
+  box-shadow: none;
+}
+
+.settings-panel .ant-card-body {
+  padding: 0;
+}
+
+.settings-panel .ant-slider {
+  margin: 8px 0;
+}
+
+.formulas-section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #e8e8e8;
+  margin-top: 20px;
+  min-height: 400px;
+}
+
+.formulas-section .ant-card {
+  margin-bottom: 16px;
+  height: auto;
+}
+
+.graph-container {
+  width: 100%;
+  height: 180px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.graph-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.graph-legend {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 9px;
+}
+
+.graph-legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.graph-legend span::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+}
+
+/* Dark theme styles */
+.dark-theme .kinematics-container {
+  background-color: #141414;
+  color: #fff;
+}
+
+.dark-theme .kinematics-header {
+  background: rgba(20, 20, 20, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .kinematics-header h1 {
+  color: #fff;
+}
+
+.dark-theme .kinematics-header p {
+  color: #aaa;
+}
+
+.dark-theme .settings-container {
+  background: rgba(20, 20, 20, 0.9);
+}
+
+.dark-theme .formulas-section {
+  background: rgba(20, 20, 20, 0.9);
+  border-top-color: #303030;
+}
+
+.dark-theme .graph-container {
+  background: #1f1f1f;
+  border-color: #303030;
+}
+
+.dark-theme .graph-legend {
+  background: rgba(31, 31, 31, 0.9);
+  color: #fff;
+}
+
+.dark-theme .ant-card {
+  background: rgba(20, 20, 20, 0.9);
+  border-color: #303030;
+}
+
+.dark-theme .ant-card-head {
+  border-bottom-color: #303030;
+}
+
+.dark-theme .ant-card-head-title {
+  color: #fff;
+}
+
+.dark-theme .ant-statistic-title {
+  color: #aaa;
+}
+
+.dark-theme .ant-statistic-content {
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .kinematics-header h1 {
+    font-size: 1.5em;
+  }
+
+  .kinematics-header p {
+    font-size: 0.9em;
+  }
+
+  .simulation-content {
+    flex-direction: column;
+    min-height: 800px;
+  }
+
+  .settings-container {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .visualization-container {
+    height: 400px;
+  }
+
+  .formulas-section {
+    min-height: 600px;
+  }
+
+  .graph-container {
+    height: 150px;
+  }
+}
+
+.explanation-section,
+.facts-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  min-height: 200px;
+}
+
+.explanation-content,
+.facts-content {
+  margin-top: 10px;
+  height: 100%;
+}
+
+.explanation-content p,
+.facts-content li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #000;
+}
+
+.explanation-content ul,
+.explanation-content ol,
+.facts-content ul {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.explanation-content li,
+.facts-content li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 8px;
+}
+
+.explanation-content strong,
+.facts-content strong {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+/* Dark theme styles */
+.dark-theme .explanation-section,
+.dark-theme .facts-section {
+  background-color: rgba(20, 20, 20, 0.9);
+  border: 1px solid #303030;
+}
+
+.dark-theme .explanation-content p,
+.dark-theme .facts-content li {
+  color: #fff;
+}
+
+.dark-theme .explanation-content strong,
+.dark-theme .facts-content strong {
+  color: #40a9ff;
+} 
