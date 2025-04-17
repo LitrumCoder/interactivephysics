@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactivephysics/static/css/main.64baa5f8.css",
+    "main.js": "/interactivephysics/static/js/main.e45d62bc.js",
+    "index.html": "/interactivephysics/index.html",
+    "main.64baa5f8.css.map": "/interactivephysics/static/css/main.64baa5f8.css.map",
+    "main.e45d62bc.js.map": "/interactivephysics/static/js/main.e45d62bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64baa5f8.css",
+    "static/js/main.e45d62bc.js"
+  ]
+}
