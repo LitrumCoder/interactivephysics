@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/interactivephysics/static/css/main.64baa5f8.css",
-    "main.js": "/interactivephysics/static/js/main.93f2a6eb.js",
+    "main.js": "/interactivephysics/static/js/main.b7d65133.js",
     "index.html": "/interactivephysics/index.html",
     "main.64baa5f8.css.map": "/interactivephysics/static/css/main.64baa5f8.css.map",
-    "main.93f2a6eb.js.map": "/interactivephysics/static/js/main.93f2a6eb.js.map"
+    "main.b7d65133.js.map": "/interactivephysics/static/js/main.b7d65133.js.map"
   },
   "entrypoints": [
     "static/css/main.64baa5f8.css",
-    "static/js/main.93f2a6eb.js"
+    "static/js/main.b7d65133.js"
   ]
 }
